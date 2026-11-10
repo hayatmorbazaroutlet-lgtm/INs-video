@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ভিডিও ডাউনলোডার</string>
+    <string name="menu_reload">রিলোড</string>
+    <string name="menu_server">সার্ভার ঠিকানা বদলান</string>
+    <string name="dialog_title">সার্ভারের ঠিকানা</string>
+    <string name="dialog_hint">https://পিসির-নাম.xxxx.ts.net</string>
+    <string name="dialog_save">সংরক্ষণ</string>
+    <string name="dialog_cancel">বাতিল</string>
+    <string name="download_started">ডাউনলোড শুরু হয়েছে: %s</string>
+    <string name="download_failed">ডাউনলোড শুরু করা যায়নি</string>
+    <string name="error_html"><![CDATA[
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1"></head>
+<body style="font-family:sans-serif;background:#0f172a;color:#e2e8f0;padding:24px;line-height:1.6">
+<h3>⚠ সার্ভারে সংযোগ হয়নি</h3>
+<p>এগুলো দেখুন:</p>
+<ul>
+<li>পিসি চালু আছে কিনা</li>
+<li>পিসিতে <b>python app.py</b> চলছে কিনা</li>
+<li>পিসি ও ফোন দুটোতেই Tailscale চালু কিনা</li>
+<li>উপরের ⋮ মেনু থেকে "সার্ভার ঠিকানা বদলান" দিয়ে ঠিকানা ঠিক আছে কিনা</li>
+</ul>
+<p>তারপর ⋮ মেনু থেকে "রিলোড" চাপুন।</p>
+</body></html>
+]]></string>
+</resources>

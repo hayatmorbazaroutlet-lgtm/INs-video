@@ -1,0 +1,33 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.vdl'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.vdl"
+        minSdk 29          // Android 10 বা নতুন (স্টোরেজ পারমিশন লাগে না)
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+// কোনো বাইরের লাইব্রেরি লাগে না, শুধু Android এর নিজস্ব WebView ব্যবহার হয়
